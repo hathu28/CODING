@@ -1,0 +1,43 @@
+cmake_minimum_required(VERSION 3.30)
+project(ReimuOJ_MarisaOJ)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(ReimuOJ_MarisaOJ
+    _531.cpp
+        _543.cpp
+        _544.cpp
+        _346.cpp
+        _325.cpp
+        _323.cpp
+        _92.cpp
+        _546.cpp
+        _545.cpp
+        _59.cpp
+        _60.cpp
+        _61.cpp
+        _62.cpp
+        _436.cpp
+        _64.cpp
+        _63.cpp
+        _81.cpp
+        _222.cpp
+        _223.cpp
+        _1.cpp
+        _2.cpp
+        _3.cpp
+        _8.cpp
+        _397.cpp
+        _515.cpp
+        _76.cpp
+        _77.cpp
+        _78.cpp
+        _396.cpp
+        _420.cpp
+        _421.cpp
+        _15.cpp
+        _4.cpp
+        _9.cpp
+        _534.cpp
+        _535.cpp
+)
