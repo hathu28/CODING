@@ -48,7 +48,12 @@ private:
     // #define debug(x) cerr << #x << " = " << x << endl
 
     void solve() {
-        
+
+        /*
+        git commit -m ok
+        git push origin master
+        */
+
     }
 
 public:
