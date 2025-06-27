@@ -40,4 +40,7 @@ add_executable(ReimuOJ_MarisaOJ
         _9.cpp
         _534.cpp
         _535.cpp
+        UNTITLED.cpp
+        _5.cpp
+        _7.cpp
 )
