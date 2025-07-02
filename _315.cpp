@@ -29,9 +29,9 @@ const double EPS = 1e-9;
 const int dx[4] = {-1, 0, 1, 0};
 const int dy[4] = {0, 1, 0, -1};
 
-string taskname = "_19";
+string taskname = "_315";
 
-class _19 {
+class _315 {
 private:
     void fastio() {
         ios_base::sync_with_stdio(false);
@@ -47,19 +47,10 @@ private:
     // Debug template (uncomment when debugging)
     // #define debug(x) cerr << #x << " = " << x << endl
 
-    int sumdigit(int n) {
-        int sum=0;
-        while (n) {
-            sum+=abs(n%10);
-            n/=10;
-        }
-        return sum;
-    }
-
     void solve() {
-        int n;
-        cin>>n;
-        cout<<sumdigit(n);
+        int a,b;
+        cin>>a>>b;
+        cout<<a/__gcd(a,b)<<" "<<b/__gcd(a,b);
     }
 
 public:
@@ -71,12 +62,12 @@ public:
 };
 
 int32_t main() {
-    _19 solver;
+    _315 solver;
     solver.run();
     return 0;
 }
 
 /************************************************************************
  * Author: thunguyenha                                                  *                          
- * Created: 2025-06-28 00:25:34                                         *
+ * Created: 2025-07-03 02:43:55                                         *
  ************************************************************************/

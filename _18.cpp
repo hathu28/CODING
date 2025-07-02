@@ -23,15 +23,15 @@ using pii = pair<int, int>;
 // Constants
 const int MOD = 1e9 + 7;
 const long long INF = 1e18;
-const int MAX_N = 2e5 + 5;
+const int MAX_N = 1e6 + 5;
 const double PI = acos(-1.0);
 const double EPS = 1e-9;
 const int dx[4] = {-1, 0, 1, 0};
 const int dy[4] = {0, 1, 0, -1};
 
-string taskname = "_19";
+string taskname = "_18";
 
-class _19 {
+class _18 {
 private:
     void fastio() {
         ios_base::sync_with_stdio(false);
@@ -47,19 +47,27 @@ private:
     // Debug template (uncomment when debugging)
     // #define debug(x) cerr << #x << " = " << x << endl
 
-    int sumdigit(int n) {
-        int sum=0;
-        while (n) {
-            sum+=abs(n%10);
-            n/=10;
+    vector<bool> sieve(int n) {
+        vector<bool> prime(n+1,true);
+        prime[0]=prime[1]=false;
+        for (int i=2;i*i<=n;++i) {
+            //if (prime[i]) {
+                for (int j=i*i;j<=n;j+=i) {
+                    prime[j]=false;
+                }
+            //}
         }
-        return sum;
+        return prime;
     }
 
     void solve() {
         int n;
         cin>>n;
-        cout<<sumdigit(n);
+        vector<bool> prime=sieve(n);
+        if (prime[n]) {
+            cout<<"YES";
+        }
+        else cout<<"NO";
     }
 
 public:
@@ -71,12 +79,12 @@ public:
 };
 
 int32_t main() {
-    _19 solver;
+    _18 solver;
     solver.run();
     return 0;
 }
 
 /************************************************************************
  * Author: thunguyenha                                                  *                          
- * Created: 2025-06-28 00:25:34                                         *
+ * Created: 2025-07-03 03:12:01                                         *
  ************************************************************************/

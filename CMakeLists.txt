@@ -58,4 +58,10 @@ add_executable(ReimuOJ_MarisaOJ
         _314.cpp
         _542.cpp
         _16.cpp
+        _402.cpp
+        _315.cpp
+        _316.cpp
+        _24.cpp
+        _18.cpp
+        _20.cpp
 )
