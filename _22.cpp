@@ -29,9 +29,9 @@ const double EPS = 1e-9;
 const int dx[4] = {-1, 0, 1, 0};
 const int dy[4] = {0, 1, 0, -1};
 
-string taskname = "_20";
+string taskname = "_22";
 
-class _20 {
+class _22 {
 private:
     void fastio() {
         ios_base::sync_with_stdio(false);
@@ -49,14 +49,11 @@ private:
 
     void solve() {
         int n;
-        cin>>n;
-        vector<int> dp(n+1);
-        dp[0]=0;
-        dp[1]=1;
-        for (int i=2;i<=n;++i) {
-            dp[i]=dp[i-1]+dp[i-2];
+        while (true) {
+            cin>>n;
+            if (n) cout<<pow(n,5)<<endl;
+            else break;
         }
-        cout<<dp[n];
     }
 
 public:
@@ -68,12 +65,12 @@ public:
 };
 
 int32_t main() {
-    _20 solver;
+    _22 solver;
     solver.run();
     return 0;
 }
 
 /************************************************************************
  * Author: thunguyenha                                                  *                          
- * Created: 2025-07-03 03:24:50                                         *
+ * Created: 2025-07-03 05:05:39                                         *
  ************************************************************************/
