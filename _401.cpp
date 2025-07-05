@@ -50,9 +50,18 @@ private:
     void solve() {
         int n,k;
         cin>>n>>k;
-        int cl=n-(n/k*k);
-        
-        cout<<cl;
+        int cnt=0;
+        int cl=0;
+        while (n) {
+            --n;
+            ++cl;
+            if (cl==k) {
+                cl=0;
+                ++n;
+            }
+            ++cnt;
+        }
+        cout<<cnt;
     }
 
 public:

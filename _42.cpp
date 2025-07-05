@@ -29,9 +29,9 @@ const double EPS = 1e-9;
 const int dx[4] = {-1, 0, 1, 0};
 const int dy[4] = {0, 1, 0, -1};
 
-string taskname = "test";
+string taskname = "_42";
 
-class test {
+class _42 {
 private:
     void fastio() {
         ios_base::sync_with_stdio(false);
@@ -48,11 +48,13 @@ private:
     // #define debug(x) cerr << #x << " = " << x << endl
 
     void solve() {
-        string s="";
-        int i=1;
-        while (s.size()!=235) {
-            if (i%5!=0)
+        int n;
+        cin>>n;
+        int cnt=0;
+        for (int i=5;i<=n;i*=5) {
+            if (i%5==0) cnt+=n/i;
         }
+        cout<<cnt;
     }
 
 public:
@@ -64,12 +66,12 @@ public:
 };
 
 int32_t main() {
-    test solver;
+    _42 solver;
     solver.run();
     return 0;
 }
 
 /************************************************************************
  * Author: thunguyenha                                                  *                          
- * Created: 2025-07-03 21:41:11                                         *
+ * Created: 2025-07-05 11:02:47                                         *
  ************************************************************************/
